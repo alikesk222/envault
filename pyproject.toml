@@ -3,11 +3,12 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "envault"
+name = "envault-cli"
 version = "1.0.0"
 description = "AES-256 encrypted .env file manager — lock, unlock, and securely share secrets with your team"
 readme = "README.md"
 license = { text = "MIT" }
+authors = [{ name = "Ali Kesik", email = "alikesk222@gmail.com" }]
 requires-python = ">=3.10"
 keywords = ["dotenv", "secrets", "encryption", "aes", "security", "devops", "environment"]
 classifiers = [
@@ -37,6 +38,12 @@ Issues = "https://github.com/alikesk222/envault/issues"
 [project.scripts]
 envault = "envault.cli:main"
 
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["envault*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
