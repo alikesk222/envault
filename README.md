@@ -3,7 +3,7 @@
 > **AES-256-GCM encrypted .env file manager.** Lock your secrets, share them safely with your team.
 
 [![CI](https://github.com/alikesk222/envault/actions/workflows/ci.yml/badge.svg)](https://github.com/alikesk222/envault/actions/workflows/ci.yml)
-[![PyPI](https://img.shields.io/pypi/v/envault-cli.svg)](https://pypi.org/project/envault-cli/)
+[![PyPI](https://img.shields.io/pypi/v/envault-encrypt.svg)](https://pypi.org/project/envault-encrypt/)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![Security](https://img.shields.io/badge/Crypto-AES--256--GCM-blue?style=flat-square)](#)
@@ -29,7 +29,7 @@ Stop storing `.env` files in Slack DMs, emails, or unencrypted S3 buckets.
 ## Installation
 
 ```bash
-pip install envault-cli
+pip install envault-encrypt
 ```
 
 Or from source:
